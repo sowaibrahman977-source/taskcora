@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TASKORA - Work Earn Grow</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fc;
+      color: #172554;
+    }
+
+    header {
+      background: #101c35;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #65b7ff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #101c35, #174b83);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background: #ffbd45;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .tasks {
+      padding: 55px 8%;
+      text-align: center;
+    }
+
+    .task-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .task {
+      background: white;
+      padding: 30px 15px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px #00000010;
+    }
+
+    .task h3 {
+      margin-bottom: 12px;
+      color: #174b83;
+    }
+
+    footer {
+      background: #101c35;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">TASKORA</div>
+    <div>🇧🇩 Bangladesh</div>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to TASKORA</h1>
+    <p>Work • Earn • Grow</p>
+    <p>কাজ শিখুন, দক্ষতা বাড়ান, আয় করার সুযোগ তৈরি করুন।</p>
+    <button onclick="showRegistration()">
+  Get Started
+</button>
+    
+  </section>
+
+  <section class="tasks">
+    <h2>Available Tasks</h2>
+
+    <div class="task-list">
+      <div class="task">
+        <h3>📸 Photo Editing</h3>
+        <p>ছবি এডিটিংয়ের কাজ</p>
+      </div>
+
+      <div class="task">
+        <h3>⌨️ Typing</h3>
+        <p>টাইপিংয়ের কাজ</p>
+      </div>
+
+      <div class="task">
+        <h3>📧 Email Tasks</h3>
+        <p>বৈধ ইমেইল-সংক্রান্ত কাজ</p>
+      </div>
+
+      <div class="task">
+        <h3>🎁 Referral</h3>
+        <p>বন্ধুদের আমন্ত্রণ</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 TASKORA. All Rights Reserved.</p>
+    <p>Work • Earn • Grow</p>
+  </footer>
+  <br><div id="registration" style="display:none; padding:40px 20px; text-align:center;">
+    <h2>TASKORA Create Account</h2>
+    <br>
+    <input type="text" placeholder="Full Name"><br><br>
+    <input type="email" placeholder="Email Address"><br><br>
+    <input type="password" placeholder="Password"><br><br>
+    <input type="password" placeholder="Confirm Password"><br><br>
+    <button onclick="alert('Registration form ready!')">Create Account</button>
+  </div>
+  
+
+<
+/body>
+</html>
+
